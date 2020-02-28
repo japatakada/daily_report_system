@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+　  <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:import url="../layout/app.jsp">
     <c:param name="content">
@@ -34,7 +34,7 @@
             </tbody>
         </table>
 
-        <div id="pagination">
+         <div id="pagination">
             （全 ${employees_count } 件）<br />
             <c:forEach var="i" begin="1" end="${((employees_count -1) /15) +  1}" step="1">
                 <c:choose>
@@ -47,6 +47,6 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href=<c:url value='/employees/new' />">新規従業員の登録</a></p>
+        <p><a href="<c:url value='/employees/new' />">新規従業員の登録</a></p>
     </c:param>
 </c:import>
